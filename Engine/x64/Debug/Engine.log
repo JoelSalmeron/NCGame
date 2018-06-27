@@ -1,0 +1,8 @@
+﻿  engine.cpp
+c:\users\joel s\source\repos\ncgame\engine\engine.cpp(4): warning C4273: 'Engine::Intialize': inconsistent dll linkage
+  c:\users\joel s\source\repos\ncgame\engine\engine.h(19): note: see previous definition of 'Intialize'
+c:\users\joel s\source\repos\ncgame\engine\engine.cpp(13): warning C4273: 'Engine::Update': inconsistent dll linkage
+  c:\users\joel s\source\repos\ncgame\engine\engine.h(20): note: see previous definition of 'Update'
+c:\users\joel s\source\repos\ncgame\engine\engine.cpp(18): warning C4273: 'Engine::Shutdown': inconsistent dll linkage
+  c:\users\joel s\source\repos\ncgame\engine\engine.h(21): note: see previous definition of 'Shutdown'
+  Engine.vcxproj -> C:\Users\Joel S\source\repos\NCGame\x64\Debug\Engine.dll
