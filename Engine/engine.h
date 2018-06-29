@@ -10,6 +10,8 @@
 #define ENGINE_API __declspec(dllimport)   
 #endif 
 
+class TextureManager;
+
 class ENGINE_API Engine
 {
 public:
@@ -19,6 +21,8 @@ public:
 	bool Intialize();
 	void Update();
 	void Shutdown();
+
+	SDL_Renderer* GetRenderer() { return m_renderer; }
 
 	bool IsQuit() { return m_isQuit; }
 

@@ -1,4 +1,10 @@
 #include "engine.h"
+#include "textureManager.h"
+#include <assert.h>
+
+//InputManager
+//Renderer
+//AudioSystem
 
 bool Engine::Intialize()
 {
@@ -6,16 +12,23 @@ bool Engine::Intialize()
 	m_window = SDL_CreateWindow("Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
 	m_renderer = SDL_CreateRenderer(m_window, -1, 0);
 
-	return true;
-}
+	TextureManager::Instance()->Initialize(this);
 
-void Engine::Update()
-{
-	SDL_Quit();
+	return true;
 }
 
 void Engine::Shutdown()
 {
+	TextureManager::Instance()->Shutdown();
+
+	SDL_DestroyRenderer(m_renderer);
+	SDL_DestroyWindow(m_window);
+	SDL_Quit();
+}
+
+void Engine::Update()
+{
+
 	SDL_Event event;
 	SDL_PollEvent(&event);
 
@@ -24,21 +37,30 @@ void Engine::Shutdown()
 	case SDL_QUIT:
 		m_isQuit = true;
 		break;
+	case SDL_KEYDOWN:
+		if (event.key.keysym.sym == SDLK_ESCAPE)
+		{
+			m_isQuit = true;
+		}
 	}
 
+	int x, y;
+	SDL_GetMouseState(&x, &y);
 	SDL_SetRenderDrawColor(m_renderer, 255, 0, 0, 255);
 	SDL_RenderClear(m_renderer);
 
 	//Draw
-	SDL_Rect rect;
-	rect.x = 0;
-	rect.y = 0;
-	rect.w = 64;
-	rect.h = 64;
-	
-	SDL_SetRenderDrawColor(m_renderer, 0, 255, 0, 255);
+	SDL_Rect rect = { x, y, 64, 64 };
+	SDL_Texture* texture = TextureManager::Instance()->GetTexture("..\\Content\\cat.bmp");
 
-	SDL_RenderFillRect(m_renderer, &rect);
+	SDL_QueryTexture(texture, nullptr, nullptr, &rect.w, &rect.h);
+	SDL_SetRenderDrawColor(m_renderer, 0, 255, 0, 255);
+	//SDL_RenderFillRect(m_renderer, &rect);
+	//SDL_RenderCopy(m_renderer, m_texture, nullptr, &rect);
+	SDL_RenderCopyEx(m_renderer, texture, nullptr, &rect, 45.0, nullptr, SDL_FLIP_NONE);
 
 	SDL_RenderPresent(m_renderer);
 }
+
+	
+
