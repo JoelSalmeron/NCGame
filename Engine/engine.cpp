@@ -34,7 +34,13 @@ bool Engine::Intialize()
 	TextureManager::Instance()->Initialize(this);
 	TextManager::Instance()->Initialize(this);
 
-	text = TextManager::Instance()->CreateText("Hello", "..\\Content\\Courier.ttf", 24, Color::red);
+	InputManager::Instance()->AddAction("fire", SDL_BUTTON_LEFT, InputManager::eDevice::MOUSE);
+	InputManager::Instance()->AddAction("left", SDL_SCANCODE_LEFT, InputManager::eDevice::KEYBOARD);
+	InputManager::Instance()->AddAction("right", SDL_SCANCODE_RIGHT, InputManager::eDevice::KEYBOARD);
+	InputManager::Instance()->AddAction("steer", InputManager::eAxis::X, InputManager::eDevice::MOUSE);
+
+	//std::string str = std::to_string(x);
+	//text = TextManager::Instance()->CreateText(str, "..\\Content\\Courier.ttf", 24, Color::red);
 
 	return true;
 }
@@ -81,18 +87,26 @@ void Engine::Update()
 	int x, y;
 	SDL_GetMouseState(&x, &y);
 
-	if (InputManager::Instance()->GetButtonAction(SDL_SCANCODE_A) == InputManager::eButtonState::PRESSED)
+	if (InputManager::Instance()->GetActionButton("fire") == InputManager::eButtonState::PRESSED)
 	{
-		std::cout << "pressed\n";
+		std::cout << "button\n";
 	}
 
 	const Uint8* keystate = SDL_GetKeyboardState(nullptr);
-	if ((InputManager::Instance()->GetButtonAction(SDL_SCANCODE_A) == InputManager::eButtonState::PRESSED) || (InputManager::Instance()->GetButtonAction(SDL_SCANCODE_A) == InputManager::eButtonState::HELD))
+
+	float steer = InputManager::Instance()->GetActionAxisRelative("steer");
+	angle += (steer * 20.0f) * Timer::Instance()->DeltaTime();
+
+	std::string str = std::to_string(x);
+	text = TextManager::Instance()->CreateText(str, "..\\Content\\Courier.ttf", 24, Color::red);
+
+	/*const Uint8* keystate = SDL_GetKeyboardState(nullptr);
+	if ((InputManager::Instance()->GetActionButton("left") == InputManager::eButtonState::PRESSED) || (InputManager::Instance()->GetActionButton("left") == InputManager::eButtonState::HELD))
 	{
 		angle -= 90.0f * Timer::Instance()->DeltaTime();
 	}
 
-	if (keystate[SDL_SCANCODE_RIGHT]) angle += 90.0f * Timer::Instance()->DeltaTime();
+	if (keystate[SDL_SCANCODE_RIGHT]) angle += 90.0f * Timer::Instance()->DeltaTime();*/
 
 	Vector2D force = Vector2D::zero;
 	if (keystate[SDL_SCANCODE_UP])   force.y = -200.0f * Timer::Instance()->DeltaTime();
@@ -107,7 +121,7 @@ void Engine::Update()
 	Renderer::Instance()->SetColor(Color::black);
 
 	std::vector<Color> colors = { Color::red, Color::green, Color::white };
-	text->SetText("Hello World", colors[rand() % colors.size()]);
+	text->SetText(str, colors[rand() % colors.size()]);
 	text->Draw(Vector2D(10.0f, 10.0f), 0.0f);
 
 	//DRAW

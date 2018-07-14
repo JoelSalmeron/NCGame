@@ -1,2 +1,47 @@
-﻿  engine.cpp
-  Engine.vcxproj -> C:\Users\Joel S\source\repos\NCGame\x64\Debug\Engine.dll
+﻿  audioSystem.cpp
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(20): error C2065: 'sound1': undeclared identifier
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(20): error C2227: left of '->release' must point to class/struct/union/generic type
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(20): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(21): error C3861: 'ERRCHECK': identifier not found
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(22): error C2065: 'sound2': undeclared identifier
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(22): error C2227: left of '->release' must point to class/struct/union/generic type
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(22): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(23): error C3861: 'ERRCHECK': identifier not found
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(24): error C2065: 'sound3': undeclared identifier
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(24): error C2227: left of '->release' must point to class/struct/union/generic type
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(24): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(25): error C3861: 'ERRCHECK': identifier not found
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(26): error C2227: left of '->close' must point to class/struct/union/generic type
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(27): error C3861: 'ERRCHECK': identifier not found
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(28): error C2227: left of '->release' must point to class/struct/union/generic type
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(29): error C3861: 'ERRCHECK': identifier not found
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(42): error C2065: 'm_sounds': undeclared identifier
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(42): error C2228: left of '.find' must have class/struct/union
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(42): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(42): error C2228: left of '.end' must have class/struct/union
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(42): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(45): error C2065: 'm_sounds': undeclared identifier
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(45): error C2228: left of '.find' must have class/struct/union
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(45): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(46): error C3536: 'iter': cannot be used before it is initialized
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(46): error C2065: 'm_sounds': undeclared identifier
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(46): error C2228: left of '.end' must have class/struct/union
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(46): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(48): error C2227: left of '->second' must point to class/struct/union/generic type
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(48): note: type is 'int'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(58): error C2065: 'm_sounds': undeclared identifier
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(58): error C2228: left of '.find' must have class/struct/union
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(58): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(58): error C2228: left of '.end' must have class/struct/union
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(58): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(60): error C2065: 'm_sounds': undeclared identifier
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(60): error C2228: left of '.find' must have class/struct/union
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(60): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(61): error C3536: 'iter': cannot be used before it is initialized
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(61): error C2065: 'm_sounds': undeclared identifier
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(61): error C2228: left of '.end' must have class/struct/union
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(61): note: type is 'unknown-type'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(63): error C2227: left of '->second' must point to class/struct/union/generic type
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(63): note: type is 'int'
+c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(64): error C2440: 'initializing': cannot convert from 'FMOD::Sound *' to 'FMOD_RESULT'
+  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(64): note: There is no context in which this conversion is possible
