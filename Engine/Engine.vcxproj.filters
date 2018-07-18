@@ -18,13 +18,13 @@
     <Filter Include="Systems">
       <UniqueIdentifier>{bb6290e5-bc06-4521-9b44-9de1b5b12bbd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{105deecd-51ff-4d78-b66a-c4f76fa6682a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math.h">
-      <Filter>Math</Filter>
     </ClInclude>
     <ClInclude Include="matrix22.h">
       <Filter>Math</Filter>
@@ -64,6 +64,21 @@
     </ClInclude>
     <ClInclude Include="textManager.h">
       <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="_math.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="id.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="component.h">
+      <Filter>Object</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +123,18 @@
     </ClCompile>
     <ClCompile Include="textManager.cpp">
       <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Id.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="component.cpp">
+      <Filter>Object</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
