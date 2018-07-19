@@ -21,6 +21,9 @@
     <Filter Include="Object">
       <UniqueIdentifier>{105deecd-51ff-4d78-b66a-c4f76fa6682a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{aa3e860b-e95f-402d-868e-dff1e08d9517}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine.h">
@@ -59,12 +62,6 @@
     <ClInclude Include="timer.h">
       <Filter>Systems</Filter>
     </ClInclude>
-    <ClInclude Include="text.h">
-      <Filter>Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="textManager.h">
-      <Filter>Systems</Filter>
-    </ClInclude>
     <ClInclude Include="_math.h">
       <Filter>Math</Filter>
     </ClInclude>
@@ -78,15 +75,27 @@
       <Filter>Object</Filter>
     </ClInclude>
     <ClInclude Include="component.h">
-      <Filter>Object</Filter>
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="renderComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="spriteComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="transformComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="text.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="textManager.h">
+      <Filter>Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="engine.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math.cpp">
-      <Filter>Math</Filter>
     </ClCompile>
     <ClCompile Include="matrix22.cpp">
       <Filter>Math</Filter>
@@ -118,12 +127,6 @@
     <ClCompile Include="timer.cpp">
       <Filter>Systems</Filter>
     </ClCompile>
-    <ClCompile Include="text.cpp">
-      <Filter>Systems</Filter>
-    </ClCompile>
-    <ClCompile Include="textManager.cpp">
-      <Filter>Systems</Filter>
-    </ClCompile>
     <ClCompile Include="Id.cpp">
       <Filter>Object</Filter>
     </ClCompile>
@@ -134,7 +137,22 @@
       <Filter>Object</Filter>
     </ClCompile>
     <ClCompile Include="component.cpp">
-      <Filter>Object</Filter>
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="spriteComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="transformComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="_math.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="text.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="textManager.cpp">
+      <Filter>Graphics</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

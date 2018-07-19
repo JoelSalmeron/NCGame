@@ -14,7 +14,7 @@
 #include "textManager.h"
 #include "audioSystem.h"
 
-bool Engine::Intialize()
+bool Engine::Initialize()
 {
 	SDL_Init(SDL_INIT_EVERYTHING);
 	m_window = SDL_CreateWindow("Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
@@ -44,7 +44,7 @@ void Engine::Shutdown()
 void Engine::Update()
 {
 	Timer::Instance()->Update();
-	Timer::Instance()->SetTImeScale(10.0f);
+	Timer::Instance()->SetTImeScale(1.0f);
 	InputManager::Instance()->Update();
 
 	SDL_Event event;

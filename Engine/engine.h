@@ -8,9 +8,8 @@
 
 #pragma warning(disable:4251)
 
-#include "SDL.h"
-
-class TextureManager;
+#include <SDL.h>
+#include <SDL_ttf.h>
 
 class ENGINE_API Engine
 {
@@ -18,7 +17,7 @@ public:
 	Engine() { }
 	~Engine() {}
 
-	bool Intialize();
+	bool Initialize();
 	void Update();
 	void Shutdown();
 

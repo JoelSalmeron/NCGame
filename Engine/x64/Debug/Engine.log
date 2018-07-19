@@ -1,26 +1,2 @@
-﻿  audioSystem.cpp
-c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(27): error C2819: type 'std::pair<const _Kty,_Ty>' does not have an overloaded member 'operator ->'
-          with
-          [
-              _Kty=std::string,
-              _Ty=FMOD::Sound *
-          ]
-  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.13.26128\include\map(78): note: see declaration of 'std::pair<const _Kty,_Ty>'
-          with
-          [
-              _Kty=std::string,
-              _Ty=FMOD::Sound *
-          ]
-  c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(27): note: did you intend to use '.' instead?
-c:\users\joel s\source\repos\ncgame\engine\audiosystem.cpp(27): error C2039: 'release': is not a member of 'std::pair<const _Kty,_Ty>'
-          with
-          [
-              _Kty=std::string,
-              _Ty=FMOD::Sound *
-          ]
-  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.13.26128\include\map(78): note: see declaration of 'std::pair<const _Kty,_Ty>'
-          with
-          [
-              _Kty=std::string,
-              _Ty=FMOD::Sound *
-          ]
+﻿  inputManager.cpp
+  Engine.vcxproj -> C:\Users\Joel S\source\repos\NCGame\x64\Debug\Engine.dll
