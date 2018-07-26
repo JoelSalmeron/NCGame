@@ -26,9 +26,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="engine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="matrix22.h">
       <Filter>Math</Filter>
     </ClInclude>
@@ -110,6 +107,9 @@
     <ClInclude Include="kinematicComponent.h">
       <Filter>Component</Filter>
     </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="engine.cpp">
@@ -144,9 +144,6 @@
     </ClCompile>
     <ClCompile Include="timer.cpp">
       <Filter>Systems</Filter>
-    </ClCompile>
-    <ClCompile Include="Id.cpp">
-      <Filter>Object</Filter>
     </ClCompile>
     <ClCompile Include="object.cpp">
       <Filter>Object</Filter>
@@ -186,6 +183,9 @@
     </ClCompile>
     <ClCompile Include="kinematicComponent.cpp">
       <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="id.cpp">
+      <Filter>Object</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

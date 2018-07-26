@@ -1,6 +1,4 @@
-﻿  game.cpp
-  missle.cpp
-  ship.cpp
+﻿  ship.cpp
   shipContollerComponent.cpp
   Generating Code...
   Game.vcxproj -> C:\Users\Joel S\source\repos\NCGame\x64\Debug\Game.exe

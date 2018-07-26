@@ -1,6 +1,2 @@
-﻿  entity.cpp
-  kinematicComponent.cpp
-  scene.cpp
-  spriteComponent.cpp
-  Generating Code...
+﻿  controllerComponent.cpp
   Engine.vcxproj -> C:\Users\Joel S\source\repos\NCGame\x64\Debug\Engine.dll
