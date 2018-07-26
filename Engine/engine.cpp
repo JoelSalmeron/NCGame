@@ -13,6 +13,7 @@
 #include <vector>
 #include "textManager.h"
 #include "audioSystem.h"
+#include "physics.h"
 
 bool Engine::Initialize()
 {
@@ -25,6 +26,7 @@ bool Engine::Initialize()
 	InputManager::Instance()->Intialize(this);
 	TextureManager::Instance()->Initialize(this);
 	TextManager::Instance()->Initialize(this);
+	Physics::Instance()->Initialize(this);
 
 	return true;
 }
@@ -37,6 +39,7 @@ void Engine::Shutdown()
 	Renderer::Instance()->Shutdown();
 	Timer::Instance()->Shutdown();
 	
+	
 	SDL_DestroyWindow(m_window);
 	SDL_Quit();
 }
@@ -46,6 +49,8 @@ void Engine::Update()
 	Timer::Instance()->Update();
 	Timer::Instance()->SetTImeScale(1.0f);
 	InputManager::Instance()->Update();
+	AudioSystem::Instance()->Update();
+	Physics::Instance()->Update();
 
 	SDL_Event event;
 	SDL_PollEvent(&event);

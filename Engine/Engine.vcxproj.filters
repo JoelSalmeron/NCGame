@@ -92,6 +92,24 @@
     <ClInclude Include="textManager.h">
       <Filter>Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="controllerComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="physics.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="physicsComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="kinematicComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="engine.cpp">
@@ -153,6 +171,21 @@
     </ClCompile>
     <ClCompile Include="textManager.cpp">
       <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="controllerComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="physics.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="kinematicComponent.cpp">
+      <Filter>Component</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
