@@ -26,10 +26,12 @@ public:
 	SDL_Renderer* GetRenderer() { return m_renderer; }
 
 	bool IsQuit() { return m_isQuit; }
+	bool IsDebug() { return m_isDebug; }
+
 
 protected:
 	bool m_isQuit = false;
+	bool m_isDebug = false;
 	SDL_Window * m_window = nullptr;
 	SDL_Renderer * m_renderer = nullptr;
-
 };

@@ -14,12 +14,14 @@
 #include "textManager.h"
 #include "audioSystem.h"
 #include "physics.h"
+#include "fileSystem.h"
 
 bool Engine::Initialize()
 {
 	SDL_Init(SDL_INIT_EVERYTHING);
 	m_window = SDL_CreateWindow("Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
 	
+	FileSystem::Instance()->Intialize(this);
 	Timer::Instance()->Intialize(this);
 	Renderer::Instance()->Intialize(this);
 	AudioSystem::Instance()->Intialize(this);
@@ -38,6 +40,7 @@ void Engine::Shutdown()
 	TextureManager::Instance()->Shutdown();
 	Renderer::Instance()->Shutdown();
 	Timer::Instance()->Shutdown();
+	FileSystem::Instance()->Shutdown();
 	
 	
 	SDL_DestroyWindow(m_window);
@@ -51,6 +54,7 @@ void Engine::Update()
 	InputManager::Instance()->Update();
 	AudioSystem::Instance()->Update();
 	Physics::Instance()->Update();
+	FileSystem::Instance()->Update();
 
 	SDL_Event event;
 	SDL_PollEvent(&event);
@@ -68,6 +72,11 @@ void Engine::Update()
 	}
 
 	SDL_PumpEvents();
+
+	if (InputManager::Instance()->GetButtonState(SDL_SCANCODE_GRAVE) == InputManager::eButtonState::PRESSED)
+	{
+		m_isDebug = !m_isDebug;
+	}
 }
 
 	

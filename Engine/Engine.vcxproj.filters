@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
@@ -23,6 +19,19 @@
     </Filter>
     <Filter Include="Component">
       <UniqueIdentifier>{aa3e860b-e95f-402d-868e-dff1e08d9517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{a65e2030-7392-46c5-b075-63d537c5dc17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{f8a1d087-6b55-41af-a2c9-4677378383ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{f0866518-5568-4889-91f0-1785262b5251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -53,9 +62,6 @@
     <ClInclude Include="inputManager.h">
       <Filter>Systems</Filter>
     </ClInclude>
-    <ClInclude Include="singleton.h">
-      <Filter>Systems</Filter>
-    </ClInclude>
     <ClInclude Include="timer.h">
       <Filter>Systems</Filter>
     </ClInclude>
@@ -80,9 +86,6 @@
     <ClInclude Include="spriteComponent.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="transformComponent.h">
-      <Filter>Component</Filter>
-    </ClInclude>
     <ClInclude Include="text.h">
       <Filter>Graphics</Filter>
     </ClInclude>
@@ -98,9 +101,6 @@
     <ClInclude Include="scene.h">
       <Filter>Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="physics.h">
-      <Filter>Systems</Filter>
-    </ClInclude>
     <ClInclude Include="physicsComponent.h">
       <Filter>Component</Filter>
     </ClInclude>
@@ -109,6 +109,63 @@
     </ClInclude>
     <ClInclude Include="engine.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transform.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="fileSystem.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="collisionComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="physics.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="aabb.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="aabbComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="event.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="eventManager.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="textComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="eventReceiver.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="animationComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="variant.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="waypoint.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="debugDraw.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="stateMachine.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="state.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="transformControllerComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="waypointControllerComponent.h">
+      <Filter>Component</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -157,9 +214,6 @@
     <ClCompile Include="spriteComponent.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="transformComponent.cpp">
-      <Filter>Component</Filter>
-    </ClCompile>
     <ClCompile Include="_math.cpp">
       <Filter>Math</Filter>
     </ClCompile>
@@ -178,14 +232,53 @@
     <ClCompile Include="controllerComponent.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="physics.cpp">
-      <Filter>Systems</Filter>
-    </ClCompile>
     <ClCompile Include="kinematicComponent.cpp">
       <Filter>Component</Filter>
     </ClCompile>
     <ClCompile Include="id.cpp">
       <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="transform.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="fileSystem.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="physics.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="aabb.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="aabbComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="eventManager.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="textComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="animationComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="waypoint.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="debugDraw.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="state.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="stateMachine.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="transformControllerComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="waypointControllerComponent.cpp">
+      <Filter>Component</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

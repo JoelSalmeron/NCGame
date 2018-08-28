@@ -1,4 +1,7 @@
-﻿  ship.cpp
+﻿  enemy.cpp
+  formation.cpp
+  game.cpp
   shipContollerComponent.cpp
+  states.cpp
   Generating Code...
   Game.vcxproj -> C:\Users\Joel S\source\repos\NCGame\x64\Debug\Game.exe

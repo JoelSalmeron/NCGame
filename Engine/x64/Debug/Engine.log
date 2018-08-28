@@ -1,2 +1,4 @@
-﻿  controllerComponent.cpp
+﻿  state.cpp
+  stateMachine.cpp
+  Generating Code...
   Engine.vcxproj -> C:\Users\Joel S\source\repos\NCGame\x64\Debug\Engine.dll
