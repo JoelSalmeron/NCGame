@@ -1,48 +1,4 @@
-﻿  aabb.cpp
-  aabbComponent.cpp
-  animationComponent.cpp
-  audioSystem.cpp
-  color.cpp
-  controllerComponent.cpp
-  debugDraw.cpp
+﻿  audioSystem.cpp
   engine.cpp
-  entity.cpp
-  eventManager.cpp
-  fileSystem.cpp
-  id.cpp
-  inputManager.cpp
-c:\users\joel s\source\repos\ncgame\engine\inputmanager.cpp(161): warning C4018: '<': signed/unsigned mismatch
-c:\users\joel s\source\repos\ncgame\engine\inputmanager.cpp(183): warning C4018: '<': signed/unsigned mismatch
-c:\users\joel s\source\repos\ncgame\engine\inputmanager.cpp(205): warning C4018: '<': signed/unsigned mismatch
-c:\users\joel s\source\repos\ncgame\engine\inputmanager.cpp(228): warning C4018: '<': signed/unsigned mismatch
-  kinematicComponent.cpp
-  physics.cpp
-  scene.cpp
-  state.cpp
-  stateMachine.cpp
-  textComponent.cpp
-  texture.cpp
   Generating Code...
-  Compiling...
-  transform.cpp
-  transformControllerComponent.cpp
-  waypoint.cpp
-  waypointControllerComponent.cpp
-c:\users\joel s\source\repos\ncgame\engine\waypointcontrollercomponent.cpp(69): warning C4506: no definition for inline function 'Vector2D Vector2D::Rotate(const Vector2D &,float)'
-c:\users\joel s\source\repos\ncgame\engine\waypointcontrollercomponent.cpp(69): warning C4506: no definition for inline function 'float Vector2D::GetAngle(const Vector2D &)'
-  _math.cpp
-  matrix22.cpp
-  matrix33.cpp
-  object.cpp
-  renderer.cpp
-c:\users\joel s\source\repos\ncgame\engine\renderer.cpp(14): warning C4551: function call missing argument list
-  spriteComponent.cpp
-  text.cpp
-  textManager.cpp
-  textureManager.cpp
-  timer.cpp
-  vector2D.cpp
-  vector3D.cpp
-  Generating Code...
-     Creating library C:\Users\Joel S\source\repos\NCGame\Debug\Engine.lib and object C:\Users\Joel S\source\repos\NCGame\Debug\Engine.exp
   Engine.vcxproj -> C:\Users\Joel S\source\repos\NCGame\Debug\Engine.dll
